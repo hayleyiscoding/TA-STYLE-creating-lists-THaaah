@@ -1,0 +1,170 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+/* ol, ul {
+    list-style: none;
+} */
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Custom Styles */
+
+*,
+* ::before,
+* ::after {
+    box-sizing: border-box;
+}
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    background-color: #D4CEA7;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* General */
+.container {
+    max-width: 1200px;
+    margin: 0 auto; 
+    padding: 0 32px;
+}
+.flex {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Buttons */
+
+/* Header and Fonts */
+
+/* Clearfix */
+.clearfix::before, .clearfix::after {
+    content: "";
+    display: table;
+}
+.clearfix::after {
+    clear: both;
+}
+
+/* Color Codes */
+/* #F96115 - Header Background - Orange */
+/* #FEFBC7 - Header text */
+/* #005979 - Blue - Lists */
+/* #D4CEA7 - Bg */
+/* #D0BE96 - beige - text */
+/* #252C22 - Footer bg - brown */
+/* #FCFCDD - Footer - text */
+/* #252C22 - p and h text */
+
+
+/* Header */
+.navbar {
+    background-color: #F96115;
+    padding: 25px 0;
+    align-self: flex-start;
+}
+.navbar li, footer li {
+    margin-right: 40px;
+    list-style-type: none;
+}
+.navbar a, footer a{
+    text-decoration: none;
+    color: #FEFBC7;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+/* Primary Section */
+.col {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 35px;
+}
+.col-1 {
+    background-color: #005979;
+    padding: 30px 70px;
+    flex: 0 1 31%;
+    box-shadow: 10px 10px 12px 0px rgba(66,64,66,1);
+    color: #D0BE96;
+    font-size: 20px;
+    font-weight: 400;
+}
+.col-1 li {
+    line-height: 1.8;
+}
+.sub-menu {
+    margin-left: 40px;
+}
+.sub-menu-2 {
+    list-style-type: square;
+}
+.list-3 li {
+   margin-left: -25px;
+   line-height: 2.5;
+   vertical-align: center;
+}
+.fa-li {
+    color: black;
+    padding-right: 10px;
+}
+
+/* Secondary Section */
+.lorum-ipsum dl {
+    padding: 60px 0 30px 0;
+}
+dt {
+    font-size: 35px;
+    margin-bottom: 20px;
+    font-family: 'Cousine', monospace;
+}
+dd {
+    margin-left: 55px;
+    margin-bottom: 22px;
+    font-weight: 300;
+}
+
+/* Footer */
+.footer {
+    background-color: #252C22;
+    padding: 30px 0;
+}
